@@ -8,7 +8,7 @@ format:
         code-tools: true
 ---
 
-# Generate an interactive scatter plot with [`ggplot2`](https://ggplot2.tidyverse.org/) and [`plotly`](https://plotly.com/ggplot2/) using R (@fig-iris-Rplotly)
+## Interactive scatter plot created with [`ggplot2`](https://ggplot2.tidyverse.org/) and [`plotly`](https://plotly.com/ggplot2/) using R (@fig-iris-Rplotly)
 
 ```{r}
 #| label: load-data
@@ -35,7 +35,7 @@ ggplotly(g)
 ```
 
 
-# Generate a corner plot using the [`seaborn`](https://seaborn.pydata.org/) package in Python. (@fig-iris-python)
+## Static corner plot created with  [`seaborn`](https://seaborn.pydata.org/) in Python. (@fig-iris-python)
 
 
 ```{python}
