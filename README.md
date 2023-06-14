@@ -1,2 +1,3 @@
-# quarto_example
-Example Quarto files in Python and R
+# Quarto example
+
+Example [Quarto](https://quarto.org/) files in Python and R.
