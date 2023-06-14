@@ -16,6 +16,7 @@ Use the standard "iris" flower dataset from the [`datasets`](https://rdocumentat
 #| label: load-data
 
 library(datasets)
+
 data(iris)
 head(iris)
 ```
@@ -50,9 +51,11 @@ theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 #| warning: false
 
 library(plotly)
+
 g <- ggplot(iris, aes(x = Sepal.Length, y = Petal.Width, color = Species)) + 
     geom_point() + 
     theme_bw() + 
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) 
+    
 ggplotly(g)
 ```
