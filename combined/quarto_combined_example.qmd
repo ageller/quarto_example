@@ -9,7 +9,7 @@ format:
         code-tools: true
 ---
 
-## Interactive scatter plot created with [`ggplot2`](https://ggplot2.tidyverse.org/) and [`plotly`](https://plotly.com/ggplot2/) using R (@fig-iris-Rplotly)
+## Interactive scatter plot created with [`ggplot2`](https://ggplot2.tidyverse.org/) and [`plotly`](https://plotly.com/ggplot2/) using R (@fig-iris-Rplotly).
 
 ```{r}
 #| label: load-data
@@ -23,7 +23,7 @@ head(iris)
 
 ```{r}
 #| label: fig-iris-Rplotly
-#| fig-cap: "Iris interactive scatter plot."
+#| fig-cap: "Interactive scatter plot showing iris flower data."
 #| warning: false
 
 library(plotly)
@@ -36,12 +36,12 @@ ggplotly(g)
 ```
 
 
-## Static corner plot created with  [`seaborn`](https://seaborn.pydata.org/) in Python. (@fig-iris-python)
+## Static corner plot created with  [`seaborn`](https://seaborn.pydata.org/) in Python (@fig-iris-python).
 
 
 ```{python}
 #| label: fig-iris-python
-#| fig-cap: "Iris corner plot created using Python."
+#| fig-cap: "Corner plot created showing iris flower data."
 
 import seaborn as sns
 
