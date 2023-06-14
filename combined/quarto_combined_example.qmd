@@ -1,7 +1,8 @@
 ---
-title: "Quarto combined Example"
+title: "Quarto Combined Example"
 author: "Aaron M. Geller"
 date: "6/14/2023"
+theme: journal
 format:
     html:
         code-fold: true
