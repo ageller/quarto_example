@@ -9,7 +9,7 @@ format:
         code-tools: true
 ---
 
-## Interactive scatter plot created with [`ggplot2`](https://ggplot2.tidyverse.org/) and [`plotly`](https://plotly.com/ggplot2/) using R (@fig-iris-Rplotly).
+## Interactive contour plot with linear fit lines created with [`ggplot2`](https://ggplot2.tidyverse.org/) and [`plotly`](https://plotly.com/ggplot2/) using R (@fig-iris-Rplotly).
 
 ```{r}
 #| label: load-data
@@ -28,8 +28,9 @@ head(iris)
 
 library(plotly)
 
-g <- ggplot(iris, aes(x = Sepal.Length, y = Petal.Width, color = Species)) + 
-    geom_point() + 
+g <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) + 
+    geom_density2d() + 
+    geom_smooth(method = "lm") +
     theme_bw() + 
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) 
 ggplotly(g)
