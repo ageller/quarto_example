@@ -9,7 +9,7 @@ format:
         code-tools: true
 ---
 
-## Interactive contour plot with linear regretion fit lines created with [`ggplot2`](https://ggplot2.tidyverse.org/) and [`plotly`](https://plotly.com/ggplot2/) using R (@fig-iris-Rplotly).
+## Interactive contour plot with linear regression fit lines created with [`ggplot2`](https://ggplot2.tidyverse.org/) and [`plotly`](https://plotly.com/ggplot2/) using R (@fig-iris-Rplotly).
 
 ```{r}
 #| label: load-data
