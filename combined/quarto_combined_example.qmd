@@ -9,7 +9,7 @@ format:
         code-tools: true
 ---
 
-## Interactive contour plot with linear fit lines created with [`ggplot2`](https://ggplot2.tidyverse.org/) and [`plotly`](https://plotly.com/ggplot2/) using R (@fig-iris-Rplotly).
+## Interactive contour plot with linear regretion fit lines created with [`ggplot2`](https://ggplot2.tidyverse.org/) and [`plotly`](https://plotly.com/ggplot2/) using R (@fig-iris-Rplotly).
 
 ```{r}
 #| label: load-data
@@ -23,14 +23,14 @@ head(iris)
 
 ```{r}
 #| label: fig-iris-Rplotly
-#| fig-cap: "Interactive scatter plot showing iris flower data."
+#| fig-cap: "Interactive contour plot showing iris flower data."
 #| warning: false
 
 library(plotly)
 
 g <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) + 
     geom_density2d() + 
-    geom_smooth(method = "lm") +
+    geom_smooth(method = "lm", formula = y~x) +
     theme_bw() + 
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) 
 ggplotly(g)
